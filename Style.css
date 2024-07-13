@@ -1,0 +1,121 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+body{
+    /*font-family: 'Nunito' ,sans-serif;*/
+    background-image:url(123/space.jpg) ;
+    color: #fff;
+    background-color: black;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    margin:50px 10% 0px;
+    align-items: center;
+    background-color: transparent;
+}
+header .logo{
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+}
+header .navbar a{
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    margin-left: 27px;
+    color: rgba(255, 255, 255, 0.6);
+}
+header .navbar .active{
+    color: #fff; 
+}
+.home-img img{
+    max-width: 75vh;
+    height: 75vh;
+    max-height: 90vh;
+    animation: scaling 30s linear infinite;
+}
+.home-section{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    margin: 0px 0% 0 10%;
+    gap: 20vh;
+}
+.home-section .home-content{
+    margin-bottom: 15%;
+}
+.home-section .home-content h1{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.home-section .home-content p{
+    margin-bottom: 10px;
+    color:rgba(255, 255, 255, 0.8);
+}
+.home-section .home-content .explor-watch{
+    display: flex;
+    margin-bottom: 8%;
+    margin-top: 15px;
+    gap: 50px;
+}
+.home-section .home-content .explor-watch div a{
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #fff;
+
+}
+.home-section .home-content .explor-watch div i{
+    font-size: 22px;
+}
+.info .text p{
+    max-width: 39vh;
+    max-height: 50vh;
+}
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+.info .text h3{
+    margin-bottom: 30px;
+}
+.info .text h4{
+    margin-bottom: 15px;
+}
+
+/*hover*/
+header .navbar a:hover{
+    color: #fff;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+header .logo:hover{
+    letter-spacing: 4px;
+    transition: 0.3s;
+}
+
+/*animations*/
+
+
+@keyframes scaling{
+    0%{
+        transform: scale(0.5);
+    }
+    
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.5);
+    }
+}
+
